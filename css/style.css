@@ -28,7 +28,8 @@ a{
 a:hover{
     text-decoration: none;
 }
-html, body {
+html,
+body {
     scroll-behavior: smooth;
     background-color: var(--body-color);
 }
@@ -292,6 +293,14 @@ h2{
     top: 40px;
     left: 40px;
 }
+.about-bottom-img{
+    width: auto;
+    position: absolute;
+    z-index: 11;
+    bottom: 40px;
+    right: 40px;
+    padding-right: 30px;
+}
 .about-info {
     padding-left: 60px;
 }
@@ -366,7 +375,9 @@ h2{
 
 /* ==About Section Css End == */
 
-
+#portfolio{
+    padding: 0 0 50px;
+}
 .portfolio-head{
     width: 600px;
     margin: 0 auto;
@@ -375,9 +386,36 @@ h2{
 .portfolio-head h2{
     padding: 0 0 10px;
 }
-
-
-
+#portfolio .menu{
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0;
+}
+#portfolio .menu button{
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: medium;
+    border-radius: 8px;
+    border: none;
+    transition: all linear .3s;
+}
+#portfolio .menu button:hover{
+    background-color: var(--primary);
+    color: var(--white);
+}
+.box-list .box-item{
+    margin-bottom: 30px;
+}
+.box-list .box-item img{
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: all linear .6s;
+}
+.box-list .box-item:hover img{
+    transform: scale(1.01);
+}
 
 
 

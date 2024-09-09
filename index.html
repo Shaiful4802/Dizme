@@ -143,8 +143,9 @@
       <section id="about">
         <div class="container">
             <div class="row align-items-center">
-              <picture class="about-top-img">
-                <img src="images/overlay (9).png" alt="#">
+              <picture >
+                <img class="about-top-img" src="images/overlay (9).png" alt="#">
+                <img class="about-bottom-img" src="images/overlay (10).png" alt="#">
               </picture>
             <div class="col-lg-6">
               <div class="about-img">
@@ -156,7 +157,7 @@
                   <p>Years of Success</p>
                 </div>
                 <div class="count-project">
-                  <h3 class="year" ><span class="counter year">9</span>K</h3>
+                  <h3 class="year"><span class="counter">9</span>K</h3>
                   <p>Total Projects</p>
                 </div>
               </div>
@@ -168,7 +169,6 @@
                   <h2>I Can Design Anything You Want</h2>
                 </div>
                 <p>Hello there! I am a web designer, and I am very passionate and dedicated to my work. With 20 years experience as a professional web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration.</p>
-
                 <button class="btn-prime">Hire me</button>
               </div>
             </div>
@@ -176,9 +176,6 @@
         </div>
       </section>
     <!-- Header Part End -->
-    
-
-
 
     <section id="portfolio">
       <div class="container">
@@ -187,14 +184,48 @@
           <h2>My Amazing Works</h2>
           <p>Most common methods for designing websites that work well on desktop is responsive and adaptive design</p>
         </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="menu">
+              <button type="button" data-filter="all">All</button>
+              <button type="button" data-filter=".category-a">Category A</button>
+              <button type="button" data-filter=".category-b">Category B</button>
+              <button type="button" data-filter=".category-c">Category C</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row box-list">
+          <div class="col-lg-4 mix box-item category-a ">
+            <img src="images/portfolio (1).jpeg" alt="#">
+          </div>
+          <div class="col-lg-4 mix box-item category-b category-c ">
+            <img src="images/portfolio (2).jpeg" alt="#">
+          </div>
+          <div class="col-lg-4 mix box-item category-c ">
+            <img src="images/portfolio (3).jpeg" alt="#">
+          </div>
+          <div class="col-lg-4 mix box-item category-a category-b">
+            <img src="images/portfolio (4).jpeg" alt="#">
+          </div>
+          <div class="col-lg-4 mix box-item category-a  category-c">
+            <img src="images/portfolio (5).jpeg" alt="#">
+          </div>
+          <div class="col-lg-4 mix box-item category-b">
+            <img src="images/portfolio (6).jpeg" alt="#">
+          </div>
+        </div>
       </div>
     </section>
 
-
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
-
 <!-- Header Part Start -->
 <!-- Header Part End -->
