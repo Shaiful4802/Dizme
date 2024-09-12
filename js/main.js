@@ -10,5 +10,21 @@ $(function(){
 
     // CommonJS
   var mixer = mixitup(".box-list");
+
+  $('.js-tilt').tilt({
+    perspective:    1000,
+  })
   
+
+  $('.slick_slide').slick({
+    arrows:false,
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  });
+
 })
+

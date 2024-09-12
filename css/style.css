@@ -46,7 +46,6 @@ p{
     line-height: 30px;
     font-weight: 400;
     color: var(--text-color);
-    letter-spacing: -.7px;
 }
 h3{
     font-size: 24px;
@@ -417,13 +416,259 @@ h2{
     transform: scale(1.01);
 }
 
+#skills{
+    padding: 180px 0 0;
+}
+.skills-item{
+    align-items: center;
+}
+.skills-item .skills-info{
+    padding-right: 100px;
+}
+.skills-item .skills-info p{
+    padding-top: 10px;
+}
+.skills-img{
+    text-align: end;
+}
 
 
 
 
+#services{
+    padding: 180px 0 0;
+    position: relative;
+}
+#services picture .services-top-img{
+    width: 460px;
+    position: absolute;
+    z-index: 0;
+    top: 250px;
+    left: 0;
+}
+#services picture .services-bottom-img{
+    width: auto;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0; 
+}
+.service-content .service-head{
+    width: 630px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.service-items .service-item{
+    margin-bottom: 25px;
+    background: #4b4f5c;
+    opacity: 100%;
+    border-radius: 16px;
+    padding: 60px 65px;
+    display: flex;
+    gap: 30px;
+}
+.service-items .service-item .services-icon{
+    text-align: center;
+    max-width: 150px;
+    height: 96px;
+    position: relative;
+}
+.service-items .service-item .services-icon .ser-img{
+    max-width: 54px;
+    height: 54px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate( -50%, -50%);
+}
+
+.service-items .service-item .service-text h3{
+    font-size: 30px;
+    color: var(--white);
+}
+.service-items .service-item .service-text h4{
+    font-size: 20px;
+    color: var(--white);
+    padding: 15px 0 10px;
+}
+.service-items .service-item .service-text h4 span{
+    color: var(--primary);
+}
+/* .service-content .service-item .srv-icon img{ 
+    object-fit: cover;
+} */
+
+#reviews{
+    padding: 180px 0 0;
+    position: relative;
+}
+#reviews picture .reviews-top-img{
+    width: auto;
+    position: absolute;
+    z-index: 0;
+    top: 40px;
+    right: 20px; 
+}
+#reviews .reviews-content .reviews-head{
+    width: 650px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    text-align: center;
+}
+.slick_slide .review{
+    text-align: center;
+}
+.reviews-content .review img{
+    margin: 0 auto 20px;
+}
+.slick_slide .review p{
+    font-family: var(--open-sans);
+    font-size: 30px;
+    font-style: italic;
+    line-height: 40px;
+    color: #b9b5c9;
+}
+.slick_slide .review .client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap: 30px;
+    padding: 30px 0 40px;
+}
+.review .client .client-img img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0;
+}
+.review .client .client-info p{
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slick-dots li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 3px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    background:transparent;
+    padding: 5px;
+    border-radius: 50%;
+}
+.slick-dots li.slick-active{
+    border: 1px solid var(--yellow);
+}
+.slick-dots li button{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: var(--primary);
+    font-size: 0;
+    border: none;
+}
 
 
 
+
+#brand{
+    padding: 180px 0 0;
+    position: relative;
+}
+#brand picture .brand-top-img{
+    width: auto;
+    position: absolute;
+    z-index: 0;
+    top: 40px;
+    left: 20px; 
+}
+#brand .brand-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 200px 200px;
+}
+#brand .brand-content div{
+    border: 1px solid #555;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#brand .brand-content img{
+    max-width:100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 50%;
+}
+#brand .brand-content div:hover img{
+    opacity: 100%;
+}
+
+
+#news{
+    padding: 180px 0;
+    position: relative;
+}
+.news-content .news-head{
+    width: 550px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+
+.news-item .news-img{
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+.news-item .news-img img{
+    max-width: 100%;
+    height: 290px;
+    object-fit: cover;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    transition: all linear .2s;
+}
+.news-item:hover .news-img img{
+    transform: scale(1.1);
+}
+.news-item .news-img .date{
+    padding: 13px 20px;
+    position:absolute;
+    top: 18px;
+    right: 18px;
+    z-index: 9;
+    text-align: center;
+    background-color: #1cbe59;
+    border-radius: 12px;
+}
+.news-item .news-img .date h3, p{
+    color: var(--white);
+    margin: 0;
+}
+.news-item .news-img .date p{
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+}
+.news-item .news-info p{
+    color: var(--primary);
+    padding: 25px 0 10px;
+}
+.news-item .news-info h3{
+    color: var(--white);
+}
 
 
 
