@@ -653,7 +653,8 @@ h2{
     background-color: #1cbe59;
     border-radius: 12px;
 }
-.news-item .news-img .date h3, p{
+.news-item .news-img .date h2,
+.news-item .news-img .date p{
     color: var(--white);
     margin: 0;
 }
@@ -668,6 +669,114 @@ h2{
 }
 .news-item .news-info h3{
     color: var(--white);
+}
+
+
+
+
+
+
+#newsletter{
+
+}
+.newsletter-bg{
+    background-image: url(../images/overlay.jpeg);
+    border-radius: 12px;  
+}
+.newsletter-bg .overlay{
+    background-color: rgba(128, 103, 240, .92);
+    border-radius: 12px;  
+    padding: 85px 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.overlay .mail-info .mail-text .sub-text{
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 30px;
+    font-family: var(--jost-font);
+    padding-bottom: 5px;
+}
+.mail-form{
+    display: flex;
+    align-items: center;
+    text-align: right;
+}
+.mail-form input{
+    width: 400px;
+    height: 70px;
+    margin: 0;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+    border: none;
+    padding: 0 20px;
+    color: var(--gray-dark);
+}
+.mail-form button{
+    margin-left: -5px;
+    padding: 0 35px;
+    font-size: 18px;
+    font-family: var(--jost-font);
+    font-weight: 500;
+    height: 70px;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+
+
+
+#contact{
+    padding: 180px 0 0;
+}
+
+.contact-head{
+    width: 700px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.contact-info{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 30px;
+}
+.contact-info .contact-icon i{
+    width: 88px;
+    height: 88px;
+    background-color: #fedfd7;
+    text-align: center;
+    font-size: 25px;
+    padding: 32px;
+    border-radius: 50%;
+    color: var(--primary);
+}
+
+.contact-info .contact-icon .mail{
+    background-color: #ddf5e6;
+    color: #1cbe59;
+}
+.contact-info .contact-icon .map{
+    background-color: #ece8fd;
+    color: #8067f0;
+}
+.contact-info .contact-text h2{
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 40px;
+}
+.contact-info .contact-text p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    margin: 0;
+}
+#contact .email{
+    margin: 20px 0;
 }
 
 
