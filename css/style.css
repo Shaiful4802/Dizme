@@ -399,6 +399,10 @@ h2{
     border: none;
     transition: all linear .3s;
 }
+#portfolio button.mixitup-control-active{
+    background-color: var(--primary);
+    color: var(--white);
+}
 #portfolio .menu button:hover{
     background-color: var(--primary);
     color: var(--white);
@@ -617,14 +621,26 @@ h2{
     padding: 180px 0;
     position: relative;
 }
+#news picture .news-top-img{
+    width: auto;
+    position: absolute;
+    z-index: 0;
+    top: 250px;
+    left: 100px;
+}
+#news picture .news-bottom-img{
+    width: auto;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0; 
+}
 .news-content .news-head{
     width: 550px;
     margin: 0 auto;
     text-align: center;
     padding-bottom: 50px;
 }
-
-
 .news-item .news-img{
     overflow: hidden;
     border-radius: 10px;
@@ -653,8 +669,8 @@ h2{
     background-color: #1cbe59;
     border-radius: 12px;
 }
-.news-item .news-img .date h2,
-.news-item .news-img .date p{
+.news-img .date h3,
+.news-img .date p {
     color: var(--white);
     margin: 0;
 }
@@ -666,6 +682,7 @@ h2{
 .news-item .news-info p{
     color: var(--primary);
     padding: 25px 0 10px;
+    margin: 0;
 }
 .news-item .news-info h3{
     color: var(--white);
@@ -673,11 +690,7 @@ h2{
 
 
 
-
-
-
 #newsletter{
-
 }
 .newsletter-bg{
     background-image: url(../images/overlay.jpeg);
@@ -690,6 +703,9 @@ h2{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.overlay .mail-info .mail-text p{
+    color: var(--white);
 }
 .overlay .mail-info .mail-text .sub-text{
     font-size: 22px;
@@ -730,20 +746,34 @@ h2{
 
 
 #contact{
-    padding: 180px 0 0;
+    padding: 180px 0;
+    position: relative;
 }
-
+#contact picture .contact-top-img{
+    width: auto;
+    position: absolute;
+    z-index: 0;
+    top: 100px;
+    left: 0;
+}
 .contact-head{
     width: 700px;
     margin: 0 auto;
     padding-bottom: 50px;
     text-align: center;
 }
+.social{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .contact-info{
     display: flex;
     justify-content: start;
     align-items: center;
     gap: 30px;
+    padding-top: 10px;
 }
 .contact-info .contact-icon i{
     width: 88px;
@@ -755,7 +785,6 @@ h2{
     border-radius: 50%;
     color: var(--primary);
 }
-
 .contact-info .contact-icon .mail{
     background-color: #ddf5e6;
     color: #1cbe59;
@@ -776,11 +805,75 @@ h2{
     margin: 0;
 }
 #contact .email{
-    margin: 20px 0;
+    margin: 15px 0;
+}
+
+.contact-form .form-input{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+form .form-input .input-box{
+    width: calc(100% / 2 - 7px);
+    margin-bottom: 15px;
+}
+form .form-input .input-box input{
+    width: calc(100%);
+    height: 55px;
+    border-radius: 10px;
+    background: transparent;
+    border: 1px solid #b9b5c9bd;
+    outline: none;
+    color: var(--text-color);
+    padding-left: 15px;
+}
+form .input-box .text-box{
+    width: calc(100%);
+    height: 200px;
+    border-radius: 10px;
+    background: transparent;
+    border: 1px solid #b9b5c9bd;
+    outline: none;
+    color: var(--text-color);
+    padding: 15px;
+}
+form .button .cta-btn{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    background: transparent;
+    border-radius: 50px;
+    border: 2px solid var(--primary);
+    font-family: var(--jost-font);
+    color: var(--white) !important;
+    padding: 9px 35px 8px 35px;
+    margin-top: 15px;
+    transition: all linear .3s;
+}
+form .button .cta-btn:hover{
+    background: var(--primary);
 }
 
 
 
+
+footer{
+    padding: 80px 0;
+    margin-top: 180px;
+    background: #3f4453;
+}
+.copyright h4{
+    font-size: 18px;
+    color: var(--white);
+}
+.privacy{
+    text-align: right;
+    color: white;
+}
+.privacy span{
+    margin-left: 30px;
+}
 /* ==About Section Css Start == */
 /* ==About Section Css End == */
 /* ==About Section Css Start == */
