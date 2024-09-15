@@ -32,6 +32,7 @@ html,
 body {
     scroll-behavior: smooth;
     background-color: var(--body-color);
+    position: relative;
 }
 /* .container{
 
@@ -94,9 +95,9 @@ h2{
 /* All Common css end */
 
 #navbar{
-    width: 100%;
-    position: absolute;
-    margin-top: 20px;
+    padding: 20px 0;
+    background-color: #1f232cd0;
+    z-index: 1024;
 }
 /* All Common css start */
 .main-menu li {
@@ -138,27 +139,28 @@ h2{
     background-size: cover;
     display: flex;
     align-items: center;
+    margin-top: -86px;
 }
 .align-item{
-    padding: 250px 0 150px;
+    padding: 220px 0 120px;
     align-items: center;
 }
 .banner-info h4{
-    font-size: 25px;
+    font-size: 45px;
     font-weight: 500;
     color: var(--primary);
 }
 .banner-info h1{
-    font-size: 60px;
+    font-size: 85px;
     font-weight: 500;
-    line-height: 78px;
+    line-height: 105px;
     color: var(--white);
     padding-bottom: 10px;
 }
 .banner-info h5{
-    font-size: 19px;
+    font-size: 28px;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 30px;
     font-family: var(--open-sans);
     color: var(--white);
 }
@@ -169,7 +171,10 @@ h2{
     color: #f0c45c;
 }
 .banner-info p{
-    padding: 10px 0 15px;
+    padding: 20px 0 30px;
+    font-size: 23px;
+    line-height: 35px;
+    color: var(--white);
 }
 .banner-img img{
     display: block;
@@ -186,8 +191,7 @@ h2{
     position: relative;
 }
 .banner-img .man-img{
-    width: 320px;
-    height: 400px;
+    max-width: 70%;
 }
 .banner-img .float-1{
     width: 50px;
@@ -239,7 +243,6 @@ h2{
 }
 
 
-
 #process{
     padding: 180px 0 90px;
 }
@@ -267,19 +270,7 @@ h2{
 }
 
 
-/* ==About Section Css Start == */
-/* .count-success h2{
-    font-size: 60px;
-    font-weight: 500;
-    line-height: 78px;
-    color: var(--green);
-}
-.count-success p{
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 23px;
-    color: var(--white);
-} */
+
 #about{
     width: 100%;
     padding: 90px 0;
@@ -376,6 +367,19 @@ h2{
 
 #portfolio{
     padding: 0 0 50px;
+    position: relative;
+}
+#portfolio picture .portfolio-top-img{
+    width: auto;
+    position: absolute;
+    top: 250px;
+    left: 100px;
+}
+#portfolio picture .portfolio-bottom-img{
+    width: auto;
+    position: absolute;
+    bottom: 0;
+    right: 0; 
 }
 .portfolio-head{
     width: 600px;
@@ -415,6 +419,7 @@ h2{
     object-fit: cover;
     border-radius: 8px;
     transition: all linear .6s;
+    position: relative;
 }
 .box-list .box-item:hover img{
     transform: scale(1.01);
@@ -471,6 +476,8 @@ h2{
     padding: 60px 65px;
     display: flex;
     gap: 30px;
+    position: relative;
+
 }
 .service-items .service-item .services-icon{
     text-align: center;
@@ -700,9 +707,6 @@ h2{
     background-color: rgba(128, 103, 240, .92);
     border-radius: 12px;  
     padding: 85px 90px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 .overlay .mail-info .mail-text p{
     color: var(--white);
@@ -717,7 +721,7 @@ h2{
 .mail-form{
     display: flex;
     align-items: center;
-    text-align: right;
+    justify-content: right;
 }
 .mail-form input{
     width: 400px;
@@ -731,7 +735,7 @@ h2{
 }
 .mail-form button{
     margin-left: -5px;
-    padding: 0 35px;
+    padding: 0 25px;
     font-size: 18px;
     font-family: var(--jost-font);
     font-weight: 500;
