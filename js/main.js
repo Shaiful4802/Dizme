@@ -1,6 +1,6 @@
 $(function(){
   "use strict"
-
+  //Counterup Js function Start 
   $('.counter').counterUp({
     delay: 10,
     time: 1500,
@@ -8,14 +8,15 @@ $(function(){
     beginAt: 0,
     });
 
-    // CommonJS
+  //Mixitup Js function Start 
   var mixer = mixitup(".box-list");
 
+  //Tilt Js function Start 
   $('.js-tilt').tilt({
     perspective:    1000,
   })
   
-
+  //Slick Slider Js function Start 
   $('.slick_slide').slick({
     arrows:false,
     dots: true,
@@ -25,6 +26,5 @@ $(function(){
     autoplay: true,
     autoplaySpeed: 2000,
   });
-
 })
 
